@@ -3,6 +3,7 @@ import Minibar from '../../../Components/Minibar/Minibar'
 import HeroSection from '../../../Components/HeroSection/HeroSection'
 import PetsCollection from '../../../Components/PetsCollection/PetsCollection'
 import PetsAdoption from '../../../Components/PetsAdoption/PetsAdoption'
+import PlanningPets from '../../../Components/PlanningPets/PlanningPets'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection/>
       <PetsCollection/>
       <PetsAdoption/>
+      <PlanningPets/>
     </>
   )
 }
