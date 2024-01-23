@@ -1,0 +1,67 @@
+.minibar {
+    .dropdownmenu {
+        ul {
+            margin: 0;
+            padding: 0;
+            background-color: #6504B5;
+            width: 100%;
+
+            li {
+                margin: 0;
+                padding: 0;
+                float: left;
+                position: relative;
+                width: auto;
+
+                a {
+                    color: white;
+                    display: block;
+                    font-weight: bold;
+                    font-size: 12px;
+                    padding: 10px 45px;
+                    text-align: center;
+                    transition: all 0.25 ease-in;
+                }
+
+                .submenu {
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    visibility: hidden;
+                    z-index: 1;
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+
+                        a {
+                            background-color: #6504B5;
+                            text-decoration: none;
+                            opacity: 1;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .submenu a:hover {
+                    text-decoration: underline;
+                    opacity: 0.6;
+
+                }
+            }
+
+            li:hover a {
+                background-color: #6504B5;
+                text-decoration: underline;
+                opacity: 0.6;
+            }
+
+            li:hover .submenu {
+                opacity: 1;
+                top: 50px;
+                visibility: visible;
+            }
+
+        }
+    }
+}

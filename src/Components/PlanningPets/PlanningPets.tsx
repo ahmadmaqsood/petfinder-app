@@ -2,13 +2,16 @@ import React from 'react'
 import shelters from '../../assets/IconSheltersRescues.png'
 import heart from '../../assets/Health%20Outline.svg.png'
 import dog from '../../assets/IconDogPortrait.png'
+import ads2 from '../../assets/ads2.jpg'
+import ads3 from '../../assets/ads3.png'
 
 
 const PlanningPets: React.FC = () => {
     return (
-        <div className=' PlanningPets md:my-36 xx:mt-14 bg-white py-16 '>
+        <>
+        <div className=' PlanningPets md:my-36 xx:mt-14 bg-white py-16  '>
             <h1 className='text-center text-bold text-4xl tracking-wide   mb-16'>PLANNING TO ADOPT A PET?</h1>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 xx:grid-cols-1  gap-x-6  xx:gap-y-6 place-items-center ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 xx:grid-cols-1  gap-x-6  xx:gap-y-6 mx-auto place-items-center md:max-w-[1220px] ">
                 <div className="card  w-[331px] h-[301px]    rounded-xl bg-white  text-center">
                     <img src={shelters} alt="dog" className='w-[80px] h-[80px] mx-auto' />
                     <h2 className=' text-[22px] my-6  font-semibold  text-primary uppercase'>Checklist for new adopters</h2>
@@ -29,6 +32,15 @@ const PlanningPets: React.FC = () => {
                 </div>
             </div>
         </div>
+        <div className="ads_container grid xx:grid-cols-1 md:grid-cols-2  mx-auto place-items-center md:max-w-[1520px]  ">
+            <div className='ads__img xx:mt-16 md:mt-0'>
+                <img src={ads2} alt="ads2 " />
+            </div>
+            <div className='ads__img xx:mt-8  md:mt-0'>
+                <img src={ads3} alt="ads3" />
+            </div>
+        </div>
+        </>
     )
 }
 

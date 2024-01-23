@@ -4,6 +4,7 @@ import HeroSection from '../../../Components/HeroSection/HeroSection'
 import PetsCollection from '../../../Components/PetsCollection/PetsCollection'
 import PetsAdoption from '../../../Components/PetsAdoption/PetsAdoption'
 import PlanningPets from '../../../Components/PlanningPets/PlanningPets'
+import PetsAdoptionArticles from '../../../Components/PetsAdoptionArticles/PetsAdoptionArticles'
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       <PetsCollection/>
       <PetsAdoption/>
       <PlanningPets/>
+      <PetsAdoption/>
+      <PetsAdoptionArticles/>
+
     </>
   )
 }

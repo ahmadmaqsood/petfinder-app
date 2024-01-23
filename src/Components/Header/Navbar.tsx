@@ -14,12 +14,12 @@ export default function Navbar() {
     };
 
     return (
-        <div className='bg-slate-100 shadow-md'  >
+        <div className=' py-2'  >
             <div className='left__header xx:flex xx:justify-between xx:items-center md:flex md:items-center md:justify-between '>
                 <div className='left__left flex md:gap-5 md:ms-24 2xl:ms-56 '>
-                    <img src={logo} alt='petfinder logo' className='h-12' />
+                    <img src={logo} alt='petfinder logo' className='h-16' />
                     <div className='dropdown xx:flex xx:justify-around xx:items-center md:flex md:items-center md:justify-center ms-5'>
-                        <p className='text-xx text-primary font-medium'>All About Pets</p>
+                        <p className='text-base text-primary font-bold'>All About Pets</p>
                         <button>
                             <img src={arrow} alt='petfinder logo' className='ms-3 hover:rotate-[180deg] ease-in duration-500' />
                         </button>
@@ -39,11 +39,11 @@ export default function Navbar() {
                             <CloseIcon />
                         </button>
                     </div>
-                    <div className={`right__header  md:flex md:items-center md:pb-0 xx:pb-12 xx:absolute md:static bg-slate-100  md:z-auto z-[-1] left-0 w-full  md:w-auto  md:pl-0 pl-9 transition-all duration-100  ease-in   ${isMenuOpen ? 'xx:h-28 xx:pt-10' : ' top-[-490px]'} `}>
-                        <Link to='/' className='mx-2 text-xx  text-gray-100 font-semibold hover:scale-105 xx:bg-primary xx:p-2 xx:rounded-lg '>
+                    <div className={`right__header  md:flex md:items-center md:pb-0 xx:pb-12 xx:absolute md:static  md:z-auto z-[-1] left-0 w-full  md:w-auto  md:pl-0 pl-9 transition-all duration-100  ease-in   ${isMenuOpen ? 'xx:h-28 xx:pt-10' : ' top-[-490px]'} `}>
+                        <Link to='/' className='mx-2 text-xx   font-semibold hover:scale-105  xx:p-2 xx:rounded-lg '>
                             Sign Up
                         </Link>
-                        <Link to='/' className='mx-2 text-xx  text-gray-100 font-semibold hover:scale-105 xx:bg-primary xx:p-2  xx:rounded-lg '>
+                        <Link to='/' className='mx-2 text-xx  font-semibold hover:scale-105  xx:p-2  xx:rounded-lg '>
                             Log In
                         </Link>
                     </div>
